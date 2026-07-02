@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our specialized Mathematics and Geography tutoring programs for Grade 8 to 12 students. Comprehensive curriculums tailored to school coursework and AP test preps.">
+  <title>Tutoring Subjects | Mistry Education</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-link" id="nav-logo">
+        <span class="logo-text">Mistry Education</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" id="link-home">Home</a></li>
+        <li><a href="courses.html" class="nav-link" id="link-subjects">Subjects</a></li>
+        <li><a href="about.html" class="nav-link" id="link-about">About Us</a></li>
+        <li><a href="contact.html" class="nav-link" id="link-contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="nav-toggle" aria-label="Toggle Navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="padding-top:150px; padding-bottom:50px; background-image: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.1), transparent 50%); text-align: center;">
+    <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+      <h1 class="gradient-text" style="font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 10px;">Our Tutoring Programs</h1>
+      <p style="color:var(--text-muted); max-width:600px; margin:0 auto;">Search and browse our targeted Math and Geography tutoring modules designed exclusively for students in Grades 8 to 12.</p>
+    </div>
+  </section>
+
+  <!-- Filter & Catalog Section -->
+  <section class="catalog-section" style="padding-bottom:100px;">
+    <div class="container" style="padding-top: 0;">
+      <!-- Search & Filters -->
+      <div class="filter-bar">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all" id="btn-filter-all">All Programs</button>
+          <button class="filter-btn" data-filter="math" id="btn-filter-math">Mathematics</button>
+          <button class="filter-btn" data-filter="geo" id="btn-filter-geo">Geography</button>
+        </div>
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="courseSearch" placeholder="Search subjects or topics..." class="search-input">
+        </div>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid" id="coursesGrid">
+        <!-- Math 1: Algebra -->
+        <div class="glass-card course-card" data-subject="math" 
+             data-modules='[
+               {"title": "Linear Foundations", "desc": "Solving algebraic linear equations, graph slopes, and systems of linear equations."},
+               {"title": "Quadratic Equations", "desc": "Factoring quadratics, completing the square, and using the quadratic formula."},
+               {"title": "Functions & Relations", "desc": "Domain, range, transformations, compound operations, and rational functions."},
+               {"title": "Exponential & Logarithmic", "desc": "Log rules, solving logs, exponential growth rates, and decay patterns."}
+             ]' id="subject-algebra">
+          <div>
+            <span class="course-tag tag-math">Grades 8 - 10</span>
+            <h3>Pre-Algebra & Algebra</h3>
+            <p>Develop a robust mathematical foundation. We clarify variables, graphing, equations, and complex function relationships.</p>
+          </div>
+          <button class="btn btn-secondary view-syllabus-btn" style="margin-top: 25px; width: 100%;">View Curriculum</button>
+        </div>
+
+        <!-- Math 2: Geometry -->
+        <div class="glass-card course-card" data-subject="math" 
+             data-modules='[
+               {"title": "Logical Proofs", "desc": "Conditional statements, two-column proofs, congruence, and similarity theorems."},
+               {"title": "Angles & Polygons", "desc": "Interior and exterior angles, properties of parallelograms, circles, and chords."},
+               {"title": "Right Triangle Trig", "desc": "Sine, Cosine, Tangent ratios, Pythagorean theorem, and special right triangles."},
+               {"title": "Area & Volume", "desc": "Solid shapes, surface area formulas, prism volume, and coordinate geometry mappings."}
+             ]' id="subject-geometry">
+          <div>
+            <span class="course-tag tag-math">Grades 9 - 11</span>
+            <h3>Geometry & Trigonometry</h3>
+            <p>Master spatial reasoning. Focus on logic proofs, angular calculations, shapes, and trigonometric ratios.</p>
+          </div>
+          <button class="btn btn-secondary view-syllabus-btn" style="margin-top: 25px; width: 100%;">View Curriculum</button>
+        </div>
+
+        <!-- Math 3: Calculus -->
+        <div class="glass-card course-card" data-subject="math" 
+             data-modules='[
+               {"title": "Limits & Continuity", "desc": "Evaluating limits algebraically, graphical continuity, and intermediate value theorem."},
+               {"title": "Derivatives", "desc": "Power rule, product rule, quotient rule, chain rule, and implicit differentiation."},
+               {"title": "Applications of Derivatives", "desc": "Related rates, optimization, curve sketching, and Mean Value Theorem."},
+               {"title": "Integrals & Fundamental Theorem", "desc": "Riemann sums, antiderivatives, definite integrals, and area under curves."}
+             ]' id="subject-calculus">
+          <div>
+            <span class="course-tag tag-math">Grade 12 & AP</span>
+            <h3>AP Calculus & Pre-Calculus</h3>
+            <p>Unlock advanced math. Build deep fluency with limits, derivatives, rates of change, integrals, and graphing curves.</p>
+          </div>
+          <button class="btn btn-secondary view-syllabus-btn" style="margin-top: 25px; width: 100%;">View Curriculum</button>
+        </div>
+
+        <!-- Math 4: Statistics -->
+        <div class="glass-card course-card" data-subject="math" 
+             data-modules='[
+               {"title": "Data Analysis", "desc": "Summarizing data distributions, histograms, standard deviation, and z-scores."},
+               {"title": "Probability Rules", "desc": "Independent and dependent events, binomial and geometric probability distributions."},
+               {"title": "Sampling Distributions", "desc": "Central Limit Theorem, sampling bias, and experimental design parameters."},
+               {"title": "Confidence Intervals & Hypothesis Tests", "desc": "T-tests, z-tests, p-values, null hypothesis, and chi-square analysis."}
+             ]' id="subject-statistics">
+          <div>
+            <span class="course-tag tag-math">Grades 11 - 12</span>
+            <h3>Probability & Statistics</h3>
+            <p>Learn to analyze data correctly. We cover probability models, sample distributions, regression, and significance testing.</p>
+          </div>
+          <button class="btn btn-secondary view-syllabus-btn" style="margin-top: 25px; width: 100%;">View Curriculum</button>
+        </div>
+
+        <!-- Geo 1: Physical Geography -->
+        <div class="glass-card course-card" data-subject="geo" 
+             data-modules='[
+               {"title": "Earth Systems", "desc": "Tectonic plates, volcanism, weathering, glaciations, and landforms evolution."},
+               {"title": "Weather & Climate", "desc": "Atmospheric pressure, ocean currents, Koppen climate groups, and weather fronts."},
+               {"title": "Hydrology & Biosphere", "desc": "Water cycle processes, soil composition, biogeography, and biome distribution."},
+               {"title": "Human-Environment Interaction", "desc": "Natural hazards, resource management, deforestation, and climate impact models."}
+             ]' id="subject-physical-geo">
+          <div>
+            <span class="course-tag tag-geo">Grades 8 - 10</span>
+            <h3>Physical Geography</h3>
+            <p>Discover Earth's natural systems, including tectonic shifts, atmospheric climates, water cycles, and biomes.</p>
+          </div>
+          <button class="btn btn-secondary view-syllabus-btn" style="margin-top: 25px; width: 100%;">View Curriculum</button>
+        </div>
+
+        <!-- Geo 2: Human Geography -->
+        <div class="glass-card course-card" data-subject="geo" 
+             data-modules='[
+               {"title": "Population Dynamics", "desc": "Demographic transition model, migration factors, and population density charts."},
+               {"title": "Cultural Patterns", "desc": "Global language spread, religion distribution, spatial diffusion, and architecture styles."},
+               {"title": "Urbanization", "desc": "City models, concentric zone models, urban sprawl, and transit planning networks."},
+               {"title": "Geopolitics & Industry", "desc": "Sovereign state concepts, boundaries, globalization, trade corridors, and economic levels."}
+             ]' id="subject-human-geo">
+          <div>
+            <span class="course-tag tag-geo">Grades 10 - 12 & AP</span>
+            <h3>Human & Cultural Geography</h3>
+            <p>Examine the human footprint. Study migration models, urban zoning models, cultural structures, and global geopolitics.</p>
+          </div>
+          <button class="btn btn-secondary view-syllabus-btn" style="margin-top: 25px; width: 100%;">View Curriculum</button>
+        </div>
+
+        <!-- Geo 3: Map Skills -->
+        <div class="glass-card course-card" data-subject="geo" 
+             data-modules='[
+               {"title": "Map Projections", "desc": "Mercator, Peters, Robinson distortion profiles and coordinate grids."},
+               {"title": "Topography Interpretation", "desc": "Contour lines, elevation intervals, index contours, and gradient calculations."},
+               {"title": "Map Scales & Distances", "desc": "Bar scales, representative fractions, bearings, and azimuth directions."},
+               {"title": "Symbols & Legends", "desc": "Reading spatial diagrams, thematic mapping, and demographic map visual keys."}
+             ]' id="subject-map-skills">
+          <div>
+            <span class="course-tag tag-geo">Grades 8 - 11</span>
+            <h3>Map Skills & Cartography</h3>
+            <p>Learn to read maps like a professional cartographer. Understand map projections, coordinate systems, contours, and legends.</p>
+          </div>
+          <button class="btn btn-secondary view-syllabus-btn" style="margin-top: 25px; width: 100%;">View Curriculum</button>
+        </div>
+
+        <!-- Geo 4: GIS -->
+        <div class="glass-card course-card" data-subject="geo" 
+             data-modules='[
+               {"title": "Spatial Data Forms", "desc": "Raster vs Vector models, attribute tables, shapefiles, and spatial database tags."},
+               {"title": "GIS Layering", "desc": "Overlay analysis, buffer zones, query parameters, and demographic heatmapping."},
+               {"title": "GPS & Remote Sensing", "desc": "Satellite imagery analysis, GPS trilateration, and LIDAR height data mappings."},
+               {"title": "ArcGIS & QGIS Projects", "desc": "Introduction to spatial database query tools and creating themed digital maps."}
+             ]' id="subject-gis">
+          <div>
+            <span class="course-tag tag-geo">Grades 11 - 12</span>
+            <h3>GIS & Spatial Technology</h3>
+            <p>Introduction to Geographic Information Systems. Analyze remote sensing, layering data mapping, and satellite imagery analysis.</p>
+          </div>
+          <button class="btn btn-secondary view-syllabus-btn" style="margin-top: 25px; width: 100%;">View Curriculum</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="detailsModal">
+    <div class="modal-container">
+      <span class="modal-close">&times;</span>
+      <h3 class="modal-title" id="modalTitle">Course Detail</h3>
+      <div class="modal-body" id="modalBody">
+        <!-- Content dynamically populated by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid" style="padding-top:0;">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link">
+          <span class="logo-text">Mistry Education</span>
+        </a>
+        <p>Providing premium, highly specialized tutoring in Mathematics and Geography to nurture logical thinkers and global citizens in Grades 8 to 12.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Subjects catalog</a></li>
+          <li><a href="about.html">Meet Tutors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Contact</h3>
+        <ul>
+          <li>📞 Math tutor: 7865991801</li>
+          <li>📞 Geo tutor: 7362994598</li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe for free monthly Math & Geography tips and resources.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed successfully!', 'success'); this.reset();">
+          <input type="email" placeholder="Your Email" class="newsletter-input" required>
+          <button type="submit" class="btn btn-primary" style="padding: 12px 20px;">✓</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom" style="padding: 30px 0 0 0;">
+      <p>&copy; 2026 Mistry Education. All rights reserved.</p>
+      <p>Designed for academic excellence.</p>
+    </div>
+    <div class="bottom-orb"></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Extra helper to catch filter queries from home links (e.g. courses.html?filter=math)
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const filter = urlParams.get('filter');
+      if (filter) {
+        const filterBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+        if (filterBtn) {
+          filterBtn.click();
+        }
+      }
+    });
+  </script>
+</body>
+</html>
